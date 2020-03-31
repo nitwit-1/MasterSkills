@@ -1079,22 +1079,465 @@ If you were  to reboot your machine right now, your iptables configuration would
 				<rich_text></rich_text>
 			</node>
 		</node>
-		<node custom_icon_id="0" foreground="" is_bold="True" name="Cisco Switches" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585678017.44" ts_lastsave="1585685336.86" unique_id="97">
-			<rich_text></rich_text>
-			<node custom_icon_id="0" foreground="" is_bold="True" name="Commands" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585685316.09" ts_lastsave="1585685316.09" unique_id="101">
+		<node custom_icon_id="0" foreground="" is_bold="True" name="Cisco Switches" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585678017.44" ts_lastsave="1585695439.51" unique_id="97">
+			<rich_text justification="left"></rich_text>
+			<rich_text>
+
+
+</rich_text>
+			<rich_text justification="left"></rich_text>
+			<rich_text>
+</rich_text>
+			<table char_offset="0" col_max="400" col_min="40">
+				<row>
+					<cell>Step 1
+ </cell>
+					<cell>  telnet { hostname |  ip_addr }
+ </cell>
+					<cell> Makes a Telnet connection from your host to the switch that you want to access.
+ </cell>
+				</row>
+				<row>
+					<cell> Step 2
+ </cell>
+					<cell> Login:  admin 
+  Password:  password 
+ </cell>
+					<cell> Initiates authentication.
+ Note If no password has been configured, press Return.
+ </cell>
+				</row>
+				<row>
+					<cell> Step 3
+ </cell>
+					<cell> switch#  exit 
+ </cell>
+					<cell> Exits the session when finished.
+</cell>
+				</row>
+				<row>
+					<cell>Steps</cell>
+					<cell>CLI</cell>
+					<cell>Definition</cell>
+				</row>
+			</table>
+			<table char_offset="4" col_max="400" col_min="40">
+				<row>
+					<cell>ssh { hostname |  ip_addr }
+ </cell>
+					<cell> Makes an SSH connection from your host to the switch that you want to access.
+</cell>
+				</row>
+				<row>
+					<cell>CLI</cell>
+					<cell>Definition</cell>
+				</row>
+			</table>
+			<node custom_icon_id="0" foreground="" is_bold="True" name="Commands" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585685316.09" ts_lastsave="1585696688.05" unique_id="101">
 				<rich_text></rich_text>
+				<node custom_icon_id="0" foreground="" is_bold="True" name="CLi Exec Mode" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585695585.51" ts_lastsave="1585696978.59" unique_id="127">
+					<rich_text>With user exec mode you can view the settings on the device but not make any changes. You know you are in User EXEC mode because the IOS prompt </rich_text>
+					<rich_text weight="heavy">displays a “&gt;”</rich_text>
+					<rich_text>
+
+When you start a session on the switch, you begin in EXEC mode. From EXEC mode, you can enter </rich_text>
+					<rich_text weight="heavy">Privileged Exec Mode</rich_text>
+					<rich_text>
+
+The following commands are available in EXEC mode: 
+
+</rich_text>
+					<rich_text weight="heavy">Switch# ?</rich_text>
+					<rich_text>
+
+callhome callhome commands
+cd Change current directory
+clear Reset functions
+cli CLI commands
+clock Manage the system clock
+configure Enter configuration mode
+copy Copy from one file to another
+debug Debugging functions
+debug-filter Enable filtering for debugging functions
+delete delete a file
+dir list files in a directory
+discover discover information
+end Exit configuration mode
+ethanalyzer Configure cisco fabric analyzer
+exit Exit from command interpreter
+fcping Ping an N-Port
+fctrace Trace the route for an N-Port.
+file File management commands
+find Find a file below the current directory
+format Format disks
+gunzip Uncompresses LZ77 coded files
+gzip Compresses file using LZ77 coding
+install upgrade software
+ip Configure IP features
+license Enter the license configuration mode
+logit Add syslog message
+mkdir Create new directory
+move Move files
+no Negate a command or set its defaults
+ntp Execute NTP commands
+ping Test network reachability
+purge Deletes unused data
+pwd View current directory
+reload Reboot the entire box
+replace Discard the entire configuration and load the entire configuration in
+&lt;filename&gt;
+rmdir delete a directory
+run-script Run shell scripts
+san-port-channel Port-Channel related commands
+send Send message to open sessions
+session Configure session preferences
+setup Run the basic SETUP command facility
+show Show running system information
+sleep Sleep for the specified number of seconds
+ssh SSH to another system
+syslog Execute a logging command
+system System management commands
+tac-pac save tac information to a specific location
+tail Display the last part of a file
+telnet Telnet to another system
+terminal Set terminal line parameters
+terminate Terminates a config session
+test test command
+traceroute Traceroute to destination
+undebug Disable Debugging functions (See also debug)
+unmount unmount compact flash disk or usb drive
+update Update license
+write Write current configuration
+xml xml agent
+zone Execute Zone Server commands
+zoneset Execute zoneset commands </rich_text>
+					<node custom_icon_id="0" foreground="" is_bold="True" name="Show Commands" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585695986.03" ts_lastsave="1585697452.43" unique_id="129">
+						<rich_text>    switch#  show arp
+    switch#  show bridge multicast filtering
+    switch#  show bridge multicast unregistered
+    switch#  show dot1x
+    switch#  show lacp
+    switch#  show interface advertise
+    switch#  show interface configuration
+    switch#  show interface counters
+    switch#  show interface description
+    switch#  show interface protected-ports
+    switch#  show interface port-channel
+    switch#  show interface status
+    switch#  show interface switchPort
+    switch#  show ip igmp snooping groups
+    switch#  show ip igmp snooping interface
+    switch#  show ip igmp snooping mrouter
+    switch#  show ip interface
+    switch#  show ip route
+    switch#  show mac address-table
+    switch#  show power-inline
+    switch#  show radius-server configuration
+    switch#  show radius-server key
+    switch#  show rmon statistics
+    switch#  show spanning-tree
+    switch#  show vlan
+
+</rich_text>
+					</node>
+				</node>
+				<node custom_icon_id="0" foreground="" is_bold="True" name="CLi Config. T Mode" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585695606.09" ts_lastsave="1585698164.11" unique_id="128">
+					<rich_text>Global Configuration mode is where you go to make global changes to the router such as the hostname. 
+To navigate to Global Configuration mode from Privileged EXEC mode you type “configure terminal” or “conf t” where you will be placed at the “(config)#” prompt.
+
+switch1# </rich_text>
+					<rich_text weight="heavy">configure terminal or Config t</rich_text>
+					<rich_text>
+switch1(config)# ?
+ 
+aaa Configure aaa functions
+arp ARP
+banner Configure banner message
+boot Configure boot variables
+callhome Enter the callhome configuration mode
+cdp CDP Configuration parameters
+cfs CFS configuration commands
+class-map Configure class-map
+cli Configure CLI aliases
+clock Configure time-of-day clock
+device-alias Device-alias configuration commands
+diagnostic Diagnostic commands
+end Exit configuration mode
+exit Exit from command interpreter
+fabric Switch fabric information
+fabric-binding Fabric Binding configuration
+fc FCoE/FC feature
+fcalias Fcalias configuration commands
+fcdomain Enter the fcdomain configuration mode
+fcdroplatency configure switch or network latency
+fcflow Configure fcfloww
+fcid-allocation Add/remove company id(or OUIs) from auto area list
+fcinterop Interop commands
+fcns name server configuration
+fcroute Configure FC routes
+fcs Configure Fabric Config Server
+fcsp Config commands for FC-SP
+fctimer configure fibre channel timers
+fdmi config commands for FDMI
+feature Command to enable/disable features
+fspf Configure fspf
+hostname Configure system's host name
+hw-module Enable/Disable OBFL information
+in-order-guarantee set in-order delivery guarantee
+interface Configure interfaces
+ip Configure IP features
+ipv6 Configure IPv6 features
+line Configure a terminal line
+lldp Configure global LLDP parameters
+logging Modify message logging facilities
+mac MAC configuration commands
+mac-address-table MAC Address Table
+monitor Ethernet SPAN
+no Negate a command or set its defaults
+npiv Nx port Id Virtualization (NPIV) feature enable
+npv Config commands for FC N_port Virtualizer
+ntp NTP Configuration
+pm packet manager
+policy-map Configure policy-map
+port-channel Add to/remove from a port-channel
+port-security Configure Port Security
+port-track Configure Switch port track config
+privilege Command privilege parameters
+prompt Define default prompt
+radius-server Configure RADIUS related parameters
+resequence Resequence a list with sequence numbers
+rib Configure RIB parameters
+rlir config commands for RLIR
+rmon Remote Monitoring
+role Configure roles
+rscn config commands for RSCN
+scsi-target scsi-target configuration
+show Show running system information
+snmp-server Configure snmp server
+spanning-tree Spanning Tree Subsystem
+ssh Configure SSH parameters
+svi svi configuration commands
+switchname Configure system's host name
+system system config command
+system Configure system
+tacacs+ Enable tacacs+
+telnet Enable telnet
+track Object tracking configuration commands
+trunk Configure Switch wide trunk protocol
+username Configure user information.
+vlan Vlan commands
+vrf Configure VRF parameters
+vsan Enter the vsan configuration mode
+wwn Set secondary base MAC addr and range for additional WWNs
+xml xml agent
+zone Zone configuration commands
+zoneset Zoneset configuration commands </rich_text>
+					<node custom_icon_id="0" foreground="" is_bold="True" name="Interfaces" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585696688.08" ts_lastsave="1585698089.88" unique_id="133">
+						<rich_text>Turn on switch interface 
+
+Switch1&gt;</rich_text>
+						<rich_text weight="heavy">enable</rich_text>
+						<rich_text>
+Switch1#</rich_text>
+						<rich_text weight="heavy">configure terminal</rich_text>
+						<rich_text>
+Switch1(config)#</rich_text>
+						<rich_text weight="heavy">interface FastEthernet0/0</rich_text>
+						<rich_text>
+Switch1(config-if)#</rich_text>
+						<rich_text weight="heavy">description Private LAN</rich_text>
+						<rich_text>
+Switch1(config-if)#</rich_text>
+						<rich_text weight="heavy">speed 100</rich_text>
+						<rich_text>
+Switch1(config-if)#</rich_text>
+						<rich_text weight="heavy">duplex full</rich_text>
+						<rich_text>
+Switch1(config-if)#</rich_text>
+						<rich_text weight="heavy">ip address 192.168.1.1 255.255.255.0</rich_text>
+						<rich_text> or </rich_text>
+						<rich_text weight="heavy">ip dhcp</rich_text>
+						<rich_text>
+Switch1(config-if)#</rich_text>
+						<rich_text weight="heavy">no shutdown</rich_text>
+						<rich_text>
+Switch1(config-if)#</rich_text>
+						<rich_text weight="heavy">exit</rich_text>
+						<rich_text>
+Switch1#</rich_text>
+						<rich_text weight="heavy">write</rich_text>
+						<rich_text>
+
+Turn Off Switch Interface 
+Switch1&gt;</rich_text>
+						<rich_text weight="heavy">enable</rich_text>
+						<rich_text>
+Switch1#</rich_text>
+						<rich_text weight="heavy">configure terminal</rich_text>
+						<rich_text>
+Switch1(config)#</rich_text>
+						<rich_text weight="heavy">interface FastEthernet0/0</rich_text>
+						<rich_text>
+Switch1(config-if)#</rich_text>
+						<rich_text weight="heavy">shutdown</rich_text>
+						<rich_text>
+Switch1(config-if)#</rich_text>
+						<rich_text weight="heavy">exit</rich_text>
+						<rich_text>
+Switch1#</rich_text>
+						<rich_text weight="heavy">write</rich_text>
+						<rich_text>
+
+To display a status of an interface, use the </rich_text>
+						<rich_text weight="heavy">'show interfaces status'</rich_text>
+						<rich_text> command :
+Switch1&gt;</rich_text>
+						<rich_text weight="heavy">enable</rich_text>
+						<rich_text>
+Switch1# </rich_text>
+						<rich_text weight="heavy">show interface FastEthernet 0/1 status</rich_text>
+						<rich_text>
+Switch1#</rich_text>
+						<rich_text weight="heavy">exit</rich_text>
+						<rich_text>
+</rich_text>
+					</node>
+					<node custom_icon_id="0" foreground="" is_bold="True" name="Vlans" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585698164.13" ts_lastsave="1585698211.67" unique_id="132">
+						<rich_text> A vlan partitions the  network into logical segments, which provides better administration,  security, and management of multicast traffic.
+
+
+Switch1&gt;</rich_text>
+						<rich_text weight="heavy">enable</rich_text>
+						<rich_text>
+Switch1#</rich_text>
+						<rich_text weight="heavy">configure terminal</rich_text>
+						<rich_text>
+Switch1(config)#</rich_text>
+						<rich_text weight="heavy">interface vlan 2</rich_text>
+						<rich_text>
+Switch1(config-if)#</rich_text>
+						<rich_text weight="heavy">description Finance VLAN</rich_text>
+						<rich_text>
+Switch1(config-if)#</rich_text>
+						<rich_text weight="heavy">exit</rich_text>
+						<rich_text>
+Switch1(config)#</rich_text>
+						<rich_text weight="heavy">interface range FastEthernet 0/1 , FastEthernet 0/12</rich_text>
+						<rich_text>
+Switch1(config-if-range)#</rich_text>
+						<rich_text weight="heavy">switchport mode access</rich_text>
+						<rich_text>
+Switch1(config-if-range)#</rich_text>
+						<rich_text weight="heavy">switchport access vlan 2
+</rich_text>
+					</node>
+				</node>
 			</node>
-			<node custom_icon_id="0" foreground="" is_bold="True" name="Protocols " prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585685336.87" ts_lastsave="1585685336.87" unique_id="102">
+			<node custom_icon_id="0" foreground="" is_bold="True" name="Protocols " prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585685336.87" ts_lastsave="1585696335.23" unique_id="102">
 				<rich_text></rich_text>
+				<node custom_icon_id="0" foreground="" is_bold="True" name="Cisco Discovery Protocol " prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585696309.71" ts_lastsave="1585696315.26" unique_id="130">
+					<rich_text></rich_text>
+				</node>
+				<node custom_icon_id="0" foreground="" is_bold="True" name="Spanning Tree Protocol" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585696335.25" ts_lastsave="1585696335.25" unique_id="131">
+					<rich_text></rich_text>
+				</node>
 			</node>
 		</node>
 		<node custom_icon_id="0" foreground="" is_bold="True" name="Cisco Routers" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585678030.48" ts_lastsave="1585685359.5" unique_id="98">
 			<rich_text></rich_text>
-			<node custom_icon_id="0" foreground="" is_bold="True" name="Commands" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585685348.63" ts_lastsave="1585685348.63" unique_id="103">
-				<rich_text></rich_text>
+			<node custom_icon_id="0" foreground="" is_bold="True" name="Commands" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585685348.63" ts_lastsave="1585695002.53" unique_id="103">
+				<rich_text weight="heavy">
+     </rich_text>
+				<rich_text>
+</rich_text>
+				<node custom_icon_id="0" foreground="" is_bold="True" name="Show Commands" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585694611.65" ts_lastsave="1585697497.58" unique_id="119">
+					<rich_text>  • show version 
+  • show_running-config 
+  • show controllers 
+  • show stacks 
+  • show_nterfaces 
+  • show buffers 
+  • show processes memory 
+  • show processes cpu 
+</rich_text>
+				</node>
+				<node custom_icon_id="0" foreground="" is_bold="True" name="Router Hostname" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585694192.79" ts_lastsave="1585694265.81" unique_id="108">
+					<rich_text>Providing a router hostname</rich_text>
+				</node>
+				<node custom_icon_id="0" foreground="" is_bold="True" name="Passwords" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585694236.19" ts_lastsave="1585694241.3" unique_id="109">
+					<rich_text></rich_text>
+				</node>
+				<node custom_icon_id="0" foreground="" is_bold="True" name="DNS lookup" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585694281.34" ts_lastsave="1585694287.65" unique_id="110">
+					<rich_text></rich_text>
+				</node>
+				<node custom_icon_id="0" foreground="" is_bold="True" name="Logging" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585694315.11" ts_lastsave="1585694315.11" unique_id="111">
+					<rich_text></rich_text>
+				</node>
+				<node custom_icon_id="0" foreground="" is_bold="True" name="Timestamps for logging and debugging" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585694339.47" ts_lastsave="1585694345.3" unique_id="112">
+					<rich_text></rich_text>
+				</node>
+				<node custom_icon_id="0" foreground="" is_bold="True" name="Terminal Settings" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585694385.27" ts_lastsave="1585694395.5" unique_id="113">
+					<rich_text>console, 
+
+
+
+
+
+auxiliary, 
+
+
+
+
+
+virtual </rich_text>
+				</node>
+				<node custom_icon_id="0" foreground="" is_bold="True" name="Comm Server" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585694428.78" ts_lastsave="1585694445.36" unique_id="114">
+					<rich_text>Setting up a Comm Server to access your routers more easily</rich_text>
+				</node>
+				<node custom_icon_id="0" foreground="" is_bold="True" name="Password Recovery" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585694473.25" ts_lastsave="1585694473.25" unique_id="115">
+					<rich_text></rich_text>
+				</node>
+				<node custom_icon_id="0" foreground="" is_bold="True" name="TFTP server" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585694505.86" ts_lastsave="1585694505.86" unique_id="116">
+					<rich_text></rich_text>
+				</node>
+				<node custom_icon_id="0" foreground="" is_bold="True" name="File management" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585694536.52" ts_lastsave="1585694536.52" unique_id="117">
+					<rich_text></rich_text>
+				</node>
 			</node>
-			<node custom_icon_id="0" foreground="" is_bold="True" name="Protocols " prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585685359.51" ts_lastsave="1585685359.51" unique_id="104">
-				<rich_text></rich_text>
+			<node custom_icon_id="0" foreground="" is_bold="True" name="Protocols " prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585685359.51" ts_lastsave="1585694894.51" unique_id="104">
+				<rich_text>
+
+
+
+
+
+
+
+</rich_text>
+				<node custom_icon_id="0" foreground="" is_bold="True" name="Cisco Discovery Protocol " prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585694560.33" ts_lastsave="1585696309.68" unique_id="118">
+					<rich_text></rich_text>
+				</node>
+				<node custom_icon_id="0" foreground="" is_bold="True" name="BGP" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585694837.69" ts_lastsave="1585694963.68" unique_id="120">
+					<rich_text></rich_text>
+					<node custom_icon_id="0" foreground="" is_bold="True" name="Alarms" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585694963.7" ts_lastsave="1585694963.7" unique_id="125">
+						<rich_text></rich_text>
+					</node>
+				</node>
+				<node custom_icon_id="0" foreground="" is_bold="True" name="MP-BGP" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585694856.93" ts_lastsave="1585694856.93" unique_id="121">
+					<rich_text></rich_text>
+				</node>
+				<node custom_icon_id="0" foreground="" is_bold="True" name="eBGP/iBGP" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585694870.08" ts_lastsave="1585694870.08" unique_id="122">
+					<rich_text></rich_text>
+				</node>
+				<node custom_icon_id="0" foreground="" is_bold="True" name="OSPF" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585694883.52" ts_lastsave="1585694986.7" unique_id="123">
+					<rich_text></rich_text>
+					<node custom_icon_id="0" foreground="" is_bold="True" name="Alarms" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585694986.71" ts_lastsave="1585694986.71" unique_id="126">
+						<rich_text></rich_text>
+					</node>
+				</node>
+				<node custom_icon_id="0" foreground="" is_bold="True" name="IS-IS" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585694902.56" ts_lastsave="1585694902.56" unique_id="124">
+					<rich_text></rich_text>
+				</node>
 			</node>
 		</node>
 	</node>
