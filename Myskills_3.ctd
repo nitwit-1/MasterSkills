@@ -1079,7 +1079,7 @@ If you were  to reboot your machine right now, your iptables configuration would
 				<rich_text></rich_text>
 			</node>
 		</node>
-		<node custom_icon_id="0" foreground="" is_bold="True" name="Cisco Switches" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585678017.44" ts_lastsave="1585695439.51" unique_id="97">
+		<node custom_icon_id="0" foreground="" is_bold="True" name="Cisco Switches" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585678017.44" ts_lastsave="1585699442.63" unique_id="97">
 			<rich_text justification="left"></rich_text>
 			<rich_text>
 
@@ -1135,7 +1135,7 @@ If you were  to reboot your machine right now, your iptables configuration would
 			</table>
 			<node custom_icon_id="0" foreground="" is_bold="True" name="Commands" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585685316.09" ts_lastsave="1585696688.05" unique_id="101">
 				<rich_text></rich_text>
-				<node custom_icon_id="0" foreground="" is_bold="True" name="CLi Exec Mode" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585695585.51" ts_lastsave="1585696978.59" unique_id="127">
+				<node custom_icon_id="0" foreground="" is_bold="True" name="CLi Exec Mode" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585695585.51" ts_lastsave="1585699588.4" unique_id="127">
 					<rich_text>With user exec mode you can view the settings on the device but not make any changes. You know you are in User EXEC mode because the IOS prompt </rich_text>
 					<rich_text weight="heavy">displays a “&gt;”</rich_text>
 					<rich_text>
@@ -1150,67 +1150,66 @@ The following commands are available in EXEC mode:
 					<rich_text weight="heavy">Switch# ?</rich_text>
 					<rich_text>
 
-callhome callhome commands
-cd Change current directory
-clear Reset functions
-cli CLI commands
-clock Manage the system clock
-configure Enter configuration mode
-copy Copy from one file to another
-debug Debugging functions
-debug-filter Enable filtering for debugging functions
-delete delete a file
-dir list files in a directory
-discover discover information
-end Exit configuration mode
-ethanalyzer Configure cisco fabric analyzer
-exit Exit from command interpreter
-fcping Ping an N-Port
-fctrace Trace the route for an N-Port.
-file File management commands
-find Find a file below the current directory
-format Format disks
-gunzip Uncompresses LZ77 coded files
-gzip Compresses file using LZ77 coding
-install upgrade software
-ip Configure IP features
-license Enter the license configuration mode
-logit Add syslog message
-mkdir Create new directory
-move Move files
-no Negate a command or set its defaults
-ntp Execute NTP commands
-ping Test network reachability
-purge Deletes unused data
-pwd View current directory
-reload Reboot the entire box
-replace Discard the entire configuration and load the entire configuration in
-&lt;filename&gt;
-rmdir delete a directory
-run-script Run shell scripts
+callhome    callhome commands
+cd              Change current directory
+clear           Reset functions
+cli               CLI commands
+clock           Manage the system clock
+configure    Enter configuration mode
+copy            Copy from one file to another
+debug          Debugging functions
+debug-filter  Enable filtering for debugging functions
+delete          delete a file
+dir                list files in a directory
+discover        discover information
+end               Exit configuration mode
+ethanalyzer   Configure cisco fabric analyzer
+exit                Exit from command interpreter
+fcping            Ping an N-Port
+fctrace           Trace the route for an N-Port.
+file                  File management commands
+find                Find a file below the current directory
+format            Format disk
+gunzip            Uncompresses LZ77 coded files
+gzip                Compresses file using LZ77 coding
+install             upgrade software
+ip                   Configure IP features
+license             Enter the license configuration mode
+logit               Add syslog message
+mkdir              Create new directory
+move            Move files
+no                  Negate a command or set its defaults
+ntp             Execute NTP commands
+ping            Test network reachability
+purge           Deletes unused data
+pwd             View current directory
+reload          Reboot the entire box
+replace         Discard the entire configuration and load the entire configuration in &lt;filename&gt;
+rmdir           delete a directory
+run-script      Run shell scripts
 san-port-channel Port-Channel related commands
-send Send message to open sessions
-session Configure session preferences
-setup Run the basic SETUP command facility
-show Show running system information
-sleep Sleep for the specified number of seconds
-ssh SSH to another system
-syslog Execute a logging command
-system System management commands
-tac-pac save tac information to a specific location
-tail Display the last part of a file
-telnet Telnet to another system
-terminal Set terminal line parameters
-terminate Terminates a config session
-test test command
-traceroute Traceroute to destination
-undebug Disable Debugging functions (See also debug)
-unmount unmount compact flash disk or usb drive
-update Update license
-write Write current configuration
-xml xml agent
-zone Execute Zone Server commands
-zoneset Execute zoneset commands </rich_text>
+send            Send message to open sessions
+session         Configure session preferences
+setup           Run the basic SETUP command facility
+show            Show running system information
+sleep           Sleep for the specified number of seconds
+ssh              SSH to another system
+syslog          Execute a logging command
+system          System management commands
+tac-pac         save tac information to a specific location
+tail                Display the last part of a file
+telnet            Telnet to another system
+terminal        Set terminal line parameters
+terminate       Terminates a config session
+test                test command
+traceroute      Traceroute to destination
+undebug         Disable Debugging functions (See also debug)
+unmount         unmount compact flash disk or usb drive
+update            Update license
+write               Write current configuration
+xml                 xml agent
+zone                Execute Zone Server commands
+zoneset             Execute zoneset commands </rich_text>
 					<node custom_icon_id="0" foreground="" is_bold="True" name="Show Commands" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585695986.03" ts_lastsave="1585697452.43" unique_id="129">
 						<rich_text>    switch#  show arp
     switch#  show bridge multicast filtering
@@ -1442,8 +1441,11 @@ Switch1(config-if-range)#</rich_text>
 					<rich_text></rich_text>
 				</node>
 			</node>
+			<node custom_icon_id="0" foreground="" is_bold="True" name="Security" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585699442.66" ts_lastsave="1585699442.66" unique_id="137">
+				<rich_text></rich_text>
+			</node>
 		</node>
-		<node custom_icon_id="0" foreground="" is_bold="True" name="Cisco Routers" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585678030.48" ts_lastsave="1585685359.5" unique_id="98">
+		<node custom_icon_id="0" foreground="" is_bold="True" name="Cisco Routers" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585678030.48" ts_lastsave="1585699429.0" unique_id="98">
 			<rich_text></rich_text>
 			<node custom_icon_id="0" foreground="" is_bold="True" name="Commands" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585685348.63" ts_lastsave="1585695002.53" unique_id="103">
 				<rich_text weight="heavy">
@@ -1504,7 +1506,7 @@ virtual </rich_text>
 					<rich_text></rich_text>
 				</node>
 			</node>
-			<node custom_icon_id="0" foreground="" is_bold="True" name="Protocols " prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585685359.51" ts_lastsave="1585694894.51" unique_id="104">
+			<node custom_icon_id="0" foreground="" is_bold="True" name="Protocols " prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585685359.51" ts_lastsave="1585699354.62" unique_id="104">
 				<rich_text>
 
 
@@ -1515,6 +1517,9 @@ virtual </rich_text>
 
 </rich_text>
 				<node custom_icon_id="0" foreground="" is_bold="True" name="Cisco Discovery Protocol " prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585694560.33" ts_lastsave="1585696309.68" unique_id="118">
+					<rich_text></rich_text>
+				</node>
+				<node custom_icon_id="0" foreground="" is_bold="True" name="Rip" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585699354.63" ts_lastsave="1585699359.49" unique_id="135">
 					<rich_text></rich_text>
 				</node>
 				<node custom_icon_id="0" foreground="" is_bold="True" name="BGP" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585694837.69" ts_lastsave="1585694963.68" unique_id="120">
@@ -1536,6 +1541,27 @@ virtual </rich_text>
 					</node>
 				</node>
 				<node custom_icon_id="0" foreground="" is_bold="True" name="IS-IS" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585694902.56" ts_lastsave="1585694902.56" unique_id="124">
+					<rich_text></rich_text>
+				</node>
+			</node>
+			<node custom_icon_id="0" foreground="" is_bold="True" name="Ip Routing" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585699244.49" ts_lastsave="1585699286.83" unique_id="134">
+				<rich_text>To enable routing; 
+
+Router1&gt;</rich_text>
+				<rich_text weight="heavy">enable</rich_text>
+				<rich_text>
+Router1#</rich_text>
+				<rich_text weight="heavy">configure terminal</rich_text>
+				<rich_text>
+Router1(config)#</rich_text>
+				<rich_text weight="heavy">ip routing</rich_text>
+				<rich_text>
+
+</rich_text>
+			</node>
+			<node custom_icon_id="0" foreground="" is_bold="True" name="Security" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585699429.02" ts_lastsave="1585699486.04" unique_id="136">
+				<rich_text></rich_text>
+				<node custom_icon_id="0" foreground="" is_bold="True" name="ACL" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585699486.05" ts_lastsave="1585699486.05" unique_id="138">
 					<rich_text></rich_text>
 				</node>
 			</node>
